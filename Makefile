@@ -17,3 +17,13 @@ aarch64:
 riscv64:
 	riscv64-linux-gnu-gcc -o riscv64 rosetta.c -static
 	riscv64-linux-gnu-objdump -d -Mintel ./riscv64 > riscv64-dump
+
+clean:
+	rm -f ppc
+	rm -f ppc-dump
+	rm -f arm
+	rm -f arm-dump
+	rm -f aarch64
+	rm -f aarch64-dump
+	rm -f riscv64
+	rm -f riscv64-dump
