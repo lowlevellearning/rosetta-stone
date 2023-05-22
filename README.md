@@ -15,7 +15,7 @@ git clone https://github.com/lowlevellearning/rosetta-stone.git
 ```
 ./setup.sh
 ```
-3. **Makefile usage**: You can use the Makefile to compile the rosetta.c file into executables for different architectures. Run the following command to compile the code for all supported architectures (powerpc, arm, aarch64):
+3. **Makefile usage**: You can use the Makefile to compile the rosetta.c file into executables for different architectures. Run the following command to compile the code for all supported architectures (powerpc, arm, riscv64, aarch64):
 ```
 make all
 ```
@@ -28,11 +28,15 @@ make powerpc
 ```
 make arm
 ```
+* **riscv64**
+```
+make riscv64
+```
 * **AArch64**
 ```
 make aarch64
 ```
-The compiled executables will be named ppc (for powerpc), arm (for arm), and aarch64 (for aarch64).
+The compiled executables will be named ppc (for powerpc), arm (for arm), riscv64 (for riscv64) and aarch64 (for aarch64).
 
 ## Checklist
 - registers
