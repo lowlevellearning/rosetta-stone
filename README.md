@@ -34,8 +34,11 @@ make aarch64
 ```
 The compiled executables will be named ppc (for powerpc), arm (for arm), and aarch64 (for aarch64).
 
->[!note]
-> Note for m1 mac users, normal setup did not work.
+## m1 mac compilation
+
+```
+gcc -S -o rosetta.s rosetta.c
+```
 
 ## Checklist
 - registers
