@@ -28,7 +28,7 @@ case "$DIST" in
         # zypper install cross-aarch64-gcc7
         echo "SUSE is not currently supported due to packaging errors"
         exit
-        ;; #not needed but included for symetry
+        ;; #not needed but included for symmetry
     "Fedora Linux" | "Red Hat Enterprise Linux")
         dnf -y install gcc-aarch64-linux-gnu.$(uname -m) arm-none-eabi-gcc-cs.$(uname -m) gcc-powerpc64-linux-gnu.$(uname -m)
         ;;
